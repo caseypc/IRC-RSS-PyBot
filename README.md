@@ -4,6 +4,7 @@ Very simple IRC bot that announces RSS feeds.
 Usage: https://dl.dropboxusercontent.com/u/64461957/IRC-RSS-PyBot%20Usage.png
 
 Configuration:
+
 1. Under "pybot.py" you must configure the server information between lines 11-14, and the administration information 
 2. Under "rss.py" you must configure the the RSS feeds between lines 13-17.
 
