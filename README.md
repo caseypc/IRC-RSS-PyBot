@@ -1,7 +1,9 @@
 # IRC-RSS-PyBot
 Very simple IRC bot that announces RSS feeds.
 
-Usage: https://dl.dropboxusercontent.com/u/64461957/IRC-RSS-PyBot%20Usage.png
+Usage:
+
+https://dl.dropboxusercontent.com/u/64461957/IRC-RSS-PyBot%20Usage.png
 
 Configuration:
 
