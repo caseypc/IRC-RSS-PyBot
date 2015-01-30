@@ -1,5 +1,5 @@
 # IRC-RSS-PyBot
-Very simple IRC bot that announces RSS feeds.
+Very simple IRC bot that announces RSS feeds every hour (by default). Can be forced to check for alerts using the GETALERTS command.
 
 Usage:
 
