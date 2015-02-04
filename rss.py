@@ -9,7 +9,7 @@ import HTMLParser, feedparser, re
 
 max_size = 454
 
-feed_list ="""
+RSS_FEEDS = """
 http://rss.packetstormsecurity.com/news
 http://www.reddit.com/r/netsec/.rss
 http://www.reddit.com/r/securityCTF/.rss
@@ -17,7 +17,16 @@ http://rss.packetstormsecurity.com/files
 https://ctftime.org/event/list/upcoming/rss/
 """
 
-feeds = [feed.strip() for feed in feed_list.split('\n') if feed]
+try:
+	feeds = [feed.strip() for feed in open(".rssfeeds").readlines() if feed]
+except:
+	feeds = [feed.strip() for feed in RSS_FEEDS.split('\n') if feed]
+	for feed in RSS_FEEDS:
+		if feed:
+			link = re.findall("http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", feed)
+			if link:
+				link = link[0]
+				open(".rssfeeds", 'a').write(link+'\n')
 
 strip_byte  = re.compile(r"[\x90-\xff]")
 strip_html  = re.compile(r"<.*?>")
