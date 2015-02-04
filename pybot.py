@@ -8,9 +8,9 @@ Very simple IRC bot that announces RSS feeds.
 import socket, threading, time, re, rss
 
 #SERVER
-server        = "127.0.0.1"
+server        = "irc.digital-panther.com"
 port          = 6667
-password      = ""
+password      = "ehteamrocks"
 channel       = "#ehteam"
 
 #ADMINISTRATION
