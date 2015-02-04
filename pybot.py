@@ -33,7 +33,6 @@ space		 = " " * len(syntax)
 
 ###CORE FUNCTIONS###
 def check_alerts_thread():
-	time.sleep(default_delay)
 	while 1:
 		check_alerts()
 		time.sleep(check_alert_freq)
