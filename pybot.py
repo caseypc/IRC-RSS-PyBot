@@ -8,15 +8,15 @@ Very simple IRC bot that announces RSS feeds.
 import socket, threading, time, re, rss
 
 #SERVER
-server        = "irc.digital-panther.com"
+server        = "127.0.0.1"
 port          = 6667
-password      = "ehteamrocks"
+password      = ""
 channel       = "#ehteam"
 
 #ADMINISTRATION
 admins           = [r"\x6c\x65\x6f", "fang0654", "Arglex", "jsinix", "Securitian", "BigTymer37", "nameless"]
 botnick          = "InfoSec_Alert"
-nickserv_pass    = "password"
+nickserv_pass    = ""
 check_alert_freq = 1 #HOW OFTEN (IN HOURS) TO CHECK RSS FEEDS
 
 #FEATURES
