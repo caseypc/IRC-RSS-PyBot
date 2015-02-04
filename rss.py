@@ -21,9 +21,10 @@ try:
 	feeds = [feed.strip() for feed in open(".rssfeeds").readlines() if feed]
 except:
 	feeds = [feed.strip() for feed in RSS_FEEDS.split('\n') if feed]
-	for feed in RSS_FEEDS:
+	for feed in RSS_FEEDS.split('\n'):
 		if feed:
 			link = re.findall("http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+", feed)
+			print feed
 			if link:
 				link = link[0]
 				open(".rssfeeds", 'a').write(link+'\n')

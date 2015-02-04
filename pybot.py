@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-IRC-RSS-PyBot v1 
+IRC-RSS-PyBot v1
 Leopold von Niebelschuetz-Godlewski
 
 Very simple IRC bot that announces RSS feeds.
@@ -10,13 +10,13 @@ import socket, threading, time, re, rss
 #SERVER
 server        = "127.0.0.1"
 port          = 6667
-password      = "server_password"
+password      = "password"
 channel       = "#ehteam"
 
 #ADMINISTRATION
 admins           = [r"\x6c\x65\x6f", "fang0654", "Arglex", "jsinix", "Securitian", "BigTymer37", "nameless"]
 botnick          = "InfoSec_Alert"
-nickserv_pass    = "nickserv_password"
+nickserv_pass    = "password"
 check_alert_freq = 1 #HOW OFTEN (IN HOURS) TO CHECK RSS FEEDS
 
 #FEATURES
