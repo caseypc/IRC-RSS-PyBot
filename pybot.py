@@ -10,13 +10,13 @@ import socket, threading, time, re, rss
 #SERVER
 server        = "127.0.0.1"
 port          = 6667
-password      = ""
+password      = "server_password"
 channel       = "#ehteam"
 
 #ADMINISTRATION
 admins           = [r"\x6c\x65\x6f", "fang0654", "Arglex", "jsinix", "Securitian", "BigTymer37", "nameless"]
 botnick          = "InfoSec_Alert"
-nickserv_pass    = ""
+nickserv_pass    = "nickserv_password"
 check_alert_freq = 1 #HOW OFTEN (IN HOURS) TO CHECK RSS FEEDS
 
 #FEATURES

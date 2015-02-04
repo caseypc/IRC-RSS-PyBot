@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """
 IRC-RSS-PyBot v1
-Leopold von Niebelschuetz-Godlewski 
+Leopold von Niebelschuetz-Godlewski
 
 Very simple IRC bot that announces RSS feeds.
 """
