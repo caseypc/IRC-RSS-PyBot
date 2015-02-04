@@ -10,7 +10,7 @@ import socket, threading, time, re, rss
 #SERVER
 server        = "127.0.0.1"
 port          = 6667
-password      = "password"
+password      = ""
 channel       = "#ehteam"
 
 #ADMINISTRATION
