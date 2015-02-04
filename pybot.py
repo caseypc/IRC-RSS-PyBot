@@ -199,7 +199,7 @@ def rss_del(ircmsg):
 	else:
 		sendmsg(msgto, msg)
 
-###FUN STARTS HERE!###
+###MAIN###
 ircsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ircsock.connect((server, port))
 if password: ircsock.send("PASS " + password + "\n")
